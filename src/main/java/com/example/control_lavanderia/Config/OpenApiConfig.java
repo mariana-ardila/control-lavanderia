@@ -1,4 +1,4 @@
-package com.example.Config;
+package com.example.control_lavanderia.Config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
@@ -14,7 +14,7 @@ public class OpenApiConfig {
     public OpenAPI adopcionOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API de Adopción de Mascotas")
+                        .title("API de Control de Lavanderíá")
                         .description("""
                                 Backend para un sistema simple de adopción de mascotas.
                                 
