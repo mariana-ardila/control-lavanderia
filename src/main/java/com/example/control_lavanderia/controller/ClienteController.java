@@ -24,11 +24,11 @@ public class ClienteController {
 
     @GetMapping
     public ResponseEntity<List<Cliente>> listar() {
-        return ResponseEntity.ok(clienteService.listarTodos());
+        return ResponseEntity.ok(clienteService.listar());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Cliente> buscar(@PathVariable Long id) {
-        return ResponseEntity.ok(clienteService.buscarPorId(id));
+        return ResponseEntity.ok(clienteService.obtenerPorId(id));
     }
 }

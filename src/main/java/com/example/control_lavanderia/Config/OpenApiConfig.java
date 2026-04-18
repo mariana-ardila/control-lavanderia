@@ -16,12 +16,12 @@ public class OpenApiConfig {
                 .info(new Info()
                         .title("API de Control de Lavanderíá")
                         .description("""
-                                Backend para un sistema simple de adopción de mascotas.
+                                Backend para un sistema de control de lavandería.
                                 
-                                Permite administrar **Adoptantes**, **Mascotas** y **Solicitudes** con:
-                                - Herencia JPA (`@MappedSuperclass`)
-                                - Enumeraciones (`@Enumerated`)
-                                - Auditoría automática (`@CreatedDate` / `@LastModifiedDate`)
+                                Permite administrar **Clientes**, **Órdenes** y **Prendas** con:
+                                - Relaciones JPA (One-to-Many, Many-to-One)
+                                - Enumeraciones (@Enumerated)
+                                - Lógica de negocio en servicios
                                 """)
                         .version("1.0.0")
                         .contact(new Contact()

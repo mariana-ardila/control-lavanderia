@@ -1,6 +1,7 @@
 package com.example.control_lavanderia.controller;
 
 import com.example.control_lavanderia.model.entity.Orden;
+import com.example.control_lavanderia.model.entity.Prenda;
 import com.example.control_lavanderia.service.OrdenService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,8 @@ public class OrdenController {
 
     @PostMapping
     public ResponseEntity<Orden> crear(@RequestBody Orden orden) {
-        return ResponseEntity.ok(ordenService.crearOrden(orden));
+        Orden nuevaOrden = ordenService.crearOrden(orden.getCliente().getId(), orden.getPrendas());
+        return ResponseEntity.ok(nuevaOrden);
     }
 
     @GetMapping
