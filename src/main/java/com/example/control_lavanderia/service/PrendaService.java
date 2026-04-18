@@ -1,9 +1,10 @@
 package com.example.control_lavanderia.service;
 
 
-import com.example.model.entity.Prenda;
-import com.example.model.entity.TipoPrenda;
-import com.example.repository.PrendaRepository;
+import com.example.control_lavanderia.model.entity.Prenda;
+import com.example.control_lavanderia.model.entity.TipoPrenda;
+import com.example.control_lavanderia.repository.PrendaRepository;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;

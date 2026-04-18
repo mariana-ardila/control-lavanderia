@@ -1,7 +1,8 @@
 package com.example.control_lavanderia.service;
 
-import com.example.model.entity.*;
-import com.example.repository.OrdenRepository;
+import com.example.control_lavanderia.model.entity.*;
+import com.example.control_lavanderia.repository.OrdenRepository;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

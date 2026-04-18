@@ -1,7 +1,8 @@
 package com.example.control_lavanderia.service;
 
-import com.example.model.entity.Cliente;
-import com.example.repository.ClienteRepository;
+import com.example.control_lavanderia.model.entity.Cliente;
+import com.example.control_lavanderia.repository.ClienteRepository;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
