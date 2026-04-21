@@ -17,6 +17,7 @@ public class ClienteService {
     }
 
     public Cliente guardar(Cliente cliente) {
+        cliente.setPuntosLealtad(0);
         return clienteRepository.save(cliente);
     }
 

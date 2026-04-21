@@ -3,7 +3,6 @@ package com.example.control_lavanderia.service;
 import com.example.control_lavanderia.model.entity.*;
 import com.example.control_lavanderia.repository.OrdenRepository;
 
-import org.jspecify.annotations.Nullable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -75,13 +74,13 @@ public class OrdenService {
 
     //Calcular el total basado en una tarifa fija por tipo de prenda.
     private double obtenerTarifa(TipoPrenda tipo) {
-        switch (tipo) {
-            case CAMISA: return 5000;
-            case PANTALON: return 8000;
-            case VESTIDO: return 10000;
-            case ROPA_INTERIOR: return 3000;
-            default: return 4000;
-        }
+    return switch (tipo) {
+    case CAMISA -> 5000;
+    case PANTALON -> 8000;
+    case VESTIDO -> 10000;
+    case ROPA_INTERIOR -> 3000;
+    default -> 4000;
+        };
     }
 
 	public List<Orden> listarTodas() {
